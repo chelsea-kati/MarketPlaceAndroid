@@ -93,9 +93,9 @@ public class AnnonceAdapter extends BaseAdapter {
         holder.tvAnnonceLocalisation.setText(annonce.getLocalisation());
 
         // Date
-        if (annonce.getDateCreation() != null) {
+        if (annonce.getDatePublication() != null) {
             CharSequence relativeTime = DateUtils.getRelativeTimeSpanString(
-                    annonce.getDateCreation().getTime(),
+                    annonce.getDatePublication().getTime(),
                     System.currentTimeMillis(),
                     DateUtils.MINUTE_IN_MILLIS
             );
